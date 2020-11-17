@@ -18,7 +18,7 @@ class Api::ProductsController < ApplicationController
 
   def update
     return render file: 'api/products/validate', status: :unprocessable_entity unless @product.update(product_params)
-    @message = "Product is udated"
+    @message = "Product is updated"
     render file: 'api/products/show', status: :ok
   end
 
