@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Berikut ini adalah produk yang baru saja anda tambahkan:</h1>
+    <p style="text-align:center;"><img src="<%= @image %>" style="max-height: 300px;"></p>
+    <table >
+    	<tbody>
+    		<tr>
+    			<td>Name</td>
+    			<td><%= @name %></td>
+    		</tr>
+    		<tr>
+    			<td>Price </td>
+    			<td><%= @price %> </td>
+    		</tr>
+    		<tr>
+    			<td>Category </td>
+    			<td><%= @category %> </td>
+    		</tr>
+    		<tr>
+    			<td>Status </td>
+    			<td><%= @status %> </td>
+    		</tr>
+    	</tbody>
+    </table>
+  </body>
+</html>
