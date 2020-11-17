@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "c8499dc6-1616-4f56-9b47-c1e25191e8fe",
+		"name": "Warehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products?page=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Pagination"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "Pepsi Rasa Odading",
+							"description": "Product name",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "2500",
+							"description": "Product price",
+							"type": "text"
+						},
+						{
+							"key": "product[category]",
+							"value": "Drink",
+							"description": "Product category",
+							"type": "text"
+						},
+						{
+							"key": "product[image]",
+							"description": "Product image (PNG, JPG, GIF)",
+							"type": "file",
+							"src": "/Users/imd3/Desktop/Screen Shot 2020-11-16 at 23.43.27.png"
+						},
+						{
+							"key": "product[email]",
+							"value": "pepsi@mailnesia.com",
+							"description": "Product email",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/products/13",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "Book",
+							"description": "Product name",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "30000",
+							"description": "Product price",
+							"type": "text"
+						},
+						{
+							"key": "product[category]",
+							"value": "Children",
+							"description": "Product category",
+							"type": "text"
+						},
+						{
+							"key": "product[image]",
+							"description": "Product image (PNG, JPG, GIF)",
+							"type": "file",
+							"src": "/Users/imd3/Desktop/Screen Shot 2020-11-16 at 23.43.27.png"
+						},
+						{
+							"key": "product[email]",
+							"value": "book@example.com",
+							"description": "Product email",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
