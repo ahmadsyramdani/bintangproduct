@@ -35,6 +35,7 @@ $ bundle install
 ```
 5. Create database & migrate
 ```sh
+copy .env.example to .env
 $ rake db:create && rake db:migrate
 ```
 6. Install postman & import 'warehouse.postman_collection.json' file
@@ -60,7 +61,6 @@ $ mailcatcher
 and open on browser http://127.0.0.1:1080/
 
 ### Run app
-copy .env.example to .env
 ```sh
 $ rails s -p3090
 ```
